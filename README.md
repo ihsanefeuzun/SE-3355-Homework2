@@ -1,4 +1,7 @@
 # SE-3355-Homework2
+
+Website link: https://ihsanefeuzun.pythonanywhere.com/ 
+
 I created a data model which is Product. You can see it below.
 
 
@@ -14,6 +17,3 @@ Every product has a category.
 3.	Each category shows how many items belongs to it. 
 4.	You can navigate item’s detail by clicking on the image and title.
 5.	You can go to main homepage with clicking the blue logo “Assignment” at the navbar.
-
-Website link: https://ihsanefeuzun.pythonanywhere.com/ 
-
