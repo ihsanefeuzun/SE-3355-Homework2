@@ -1,6 +1,6 @@
 # SE-3355-Homework2
 
-Website link: https://ihsanefeuzun.pythonanywhere.com/ 
+Website link: https://ihsanefeuzun.pythonanywhere.com/  
 
 I created a data model which is Product. You can see it below.
 
