@@ -1,5 +1,8 @@
 # SE-3355-Homework2
 I created a data model which is Product. You can see it below.
+
+
+
 ![Resim2](https://github.com/ihsanefeuzun/SE-3355-Homework2/assets/139785527/3bd7614e-2cd8-4910-a29c-1c697d21f3da)
 
 
