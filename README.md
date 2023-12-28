@@ -1,5 +1,6 @@
 # SE-3355-Homework2
 I created a data model which is Product. You can see it below.
+https://github.com/ihsanefeuzun/SE-3355-Homework2/blob/main/data_model.jpg?raw=true
  
 Every product has a category.
  At the website, 
