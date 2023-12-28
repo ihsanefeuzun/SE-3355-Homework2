@@ -1,6 +1,6 @@
 # SE-3355-Homework2
 I created a data model which is Product. You can see it below.
-![plot](./data_model.png)
+![Screenshot](datam_model.png)
 
  
 Every product has a category.
