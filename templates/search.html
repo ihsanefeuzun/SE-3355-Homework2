@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>Search Results</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+
+<body>
+  {% extends 'base.html' %}
+
+  {% block header %}
+  {% endblock %}
+  {% block content %}
+
+  <div class="container mt-4">
+    <h2>Search Results for "{{ keyword }}"</h2>
+
+    <div class="row mt-4">
+      <div class="container col-md-4 col-lg-3 pe-5 mb-4">
+        <ol class="list-group ">
+          {% for category, count in categories_with_counts %}
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <a href="{{ url_for('products_by_category', category_name=category) }}" class="text-decoration-none">
+              {{ category }}
+            </a>
+            <span class="badge bg-primary rounded-pill">{{ count }}</span>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="col-md-8 col-lg-9 grey-background rounded">
+        <div class="container mt-4 rounded">
+          <div class="row">
+            {% for product in products %}
+            <div class="col-md-4 mb-4 card-group">
+              <div class="card fixed-size-card rounded">
+                <a href="{{ url_for('product_detail', product_id=product.id) }}">
+                  <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top img-fixed-size"
+                    alt="{{ product['description'] }}">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="{{ url_for('product_detail', product_id=product.id) }}" class="text-decoration-none">{{
+                      product['description'] }}</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

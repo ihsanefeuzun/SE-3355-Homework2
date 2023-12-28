@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Details</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</head>
+
+<body>
+  {% extends 'base.html' %}
+
+  {% block header %}
+  {% endblock %}
+  {% block content %}
+
+  <div class="container mt-4">
+    <h2>{{ product.description }}</h2>
+    <div class="contanier row grey-background rounded">
+      <div class="col-md-4 mt-4">
+        <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.description }}"
+          class="img-fluid mb-4 img-fixed-size rounded">
+      </div>
+      <div class="col-md-8 ps-5">
+        <div class="container mt-4 center">
+          <p><strong>Ad No:</strong> {{ product.ad_no }}</p>
+          <p><strong>Price:</strong> ${{ product.price }}</p>
+          <p><strong>City:</strong> {{ product.city }}</p>
+          <p><strong>Category:</strong> {{ product.category }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</body>
+
+</html>
