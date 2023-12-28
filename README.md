@@ -1,6 +1,6 @@
 # SE-3355-Homework2
 I created a data model which is Product. You can see it below.
-![alt text]([http://url/to/img.png](https://github.com/ihsanefeuzun/SE-3355-Homework2/blob/main/data_model.jpg?raw=true))
+![alt text]([http://url/to/img.png](https://github.com/ihsanefeuzun/SE-3355-Homework2/blob/main/data_model.jpg))
 
  
 Every product has a category.
